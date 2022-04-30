@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Touché - Café & Restaurant Template"}}
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  {{> partials/navbar variant="dark" toggle="true" page="reservation.html"}}
+
+  <!-- HEADER -->
+  <header data-jarallax data-speed=".8" style="background-image: url(assets/img/32.jpg);">
+    <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black-50">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-6 fw-bold text-white">
+              Reservation
+            </h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- RESERVATION -->
+  <section class="pt-7 pt-md-9">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 text-center">
+
+          <!-- Heading -->
+          <h2 class="mb-2">
+            Online table reservation
+          </h2>
+
+          <!-- Subheading -->
+          <p class="mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae
+            maiores quae qui.
+          </p>
+
+        </div>
+      </div>
+      <div class="row justify-content-lg-center">
+        <div class="col-lg-8">
+          <center>
+            <iframe src="https://bookings.wowapps.com/make-booking/figco?src=web" width="450" height="667"
+              frameborder="0" class="embed-responsive"></iframe>
+          </center>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHONE -->
+  <section class="py-7 py-md-9">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="block-decoration-1 py-3">
+
+            <!-- Text -->
+            <p class="mb-2 text-xs text-center">
+              or call us:
+            </p>
+
+            <!-- Phone -->
+            <a class="display-6 font-serif text-decoration-none text-black" href="tel:61286601555">(02) 8660 1555</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="bg-light" data-map='{"center": [151.00764409969986, -33.67997997216532], "zoom": 12}'
+    style="height: 30rem;">
+  </section>
+
+  <!-- FOOTER -->
+  {{> partials/footer}}
+
+  <!-- TOAST -->
+  {{> partials/toast}}
+
+  <!-- JAVASCRIPT -->
+  {{> partials/scripts}}
+
+</body>
+
+</html>
